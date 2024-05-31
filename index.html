@@ -1,13 +1,381 @@
+</html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodersClub Web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coder's Club LDCE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
-<body>
-    <h1>Coders Club Website Coming Soon!!</h1>
-    <p>Deployed on Staging Surver</p>
+
+<body class="w-full min-h-screen bg-[#020014] flex flex-col">
+  <header>
+    <!-- NavBar -->
+    <div
+      class="fixed flex h-[88px] 2xl:h-[100px] w-full items-center sm:justify-evenly justify-center z-50 bg-opacity-10 border-b border-[#2F2642] border-opacity-40 backdrop-blur-md bg-[#020014]">
+      <div class="relative -mt-40 -z-10">
+        <div class="absolute inset-0 sm:left-72 sm:ml-56 sm:left-52 sm:ml-32">
+          <div class="rounded-full shadow-[#2F2642] shadow-[0px_0px_500px_200px] opacity-50"></div>
+        </div>
+      </div>
+
+      <div class="flex w-10/12 items-center justify-between">
+        <a href="/">
+          <img src="./assets/CodersClubLogo.png" alt="logo" loading="lazy" class="sm:h-[44px] sm:w-[44px] h-[50px] w-[50px]"/>
+        </a>
+
+        <nav class="hidden md:block">
+          <ul
+            class="md:flex lg:gap-x-6 lg:flex-row md:gap-x-[10px] bg-darkpurple bg-opacity-70 h-12 items-center rounded-full px-8 border border-white border-opacity-25 text-[14px] font-[400]">
+            <li><a href="/" class="text-[#C5C5CD] hover:text-white">Home</a></li>
+            <li><a href="./pages/activities.html" class="text-[#C5C5CD] hover:text-white">Activities</a></li>
+            <li><a href="./pages/our-team.html" class="text-[#C5C5CD] hover:text-white">Our Team</a></li>
+            <li><a href="./pages/careers.html" class="text-[#C5C5CD] hover:text-white">Careers</a></li>
+            <li><a href="./pages/life-at-coder-club.html" class="text-[#C5C5CD] hover:text-white">Life at Coder's
+                Club</a></li>
+          </ul>
+        </nav>
+
+        <a href="/login" class="hidden md:block">
+          <button
+            class="w-32 px-6 py-2 gap-[10px] rounded-[8px] border border-solid border-1 border-[#6A559D] font-semibold opacity-100 text-white box-shadow-btn">
+            Join Club
+          </button>
+        </a>
+
+        <!-- Hamburger Menu -->
+
+        <button class="md:hidden text-white" id="hamburger-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+
+
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="hidden sm:hidden" id="mobile-menu">
+      <ul class="bg-opacity-70 p-4 border-b border-[#2F2642] border-opacity-40">
+        <li class="py-2"><a href="/" class="text-[#C5C5CD] hover:text-white">Home</a></li>
+        <li class="py-2"><a href="./pages/activities.html" class="text-[#C5C5CD] hover:text-white">Activities</a></li>
+        <li class="py-2"><a href="./pages/our-team.html" class="text-[#C5C5CD] hover:text-white">Our Team</a></li>
+        <li class="py-2"><a href="./pages/careers.html" class="text-[#C5C5CD] hover:text-white">Careers</a></li>
+        <li class="py-2"><a href="./pages/life-at-coder-club.html" class="text-[#C5C5CD] hover:text-white">Life at
+            Coder's Club</a></li>
+
+        <li class="py-2"><a href="/login" class="text-[#C5C5CD] hover:text-white">Join Club</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HeroSection -->
+    <div class="relative mt-64 sm:w-8/12 w-10/12 mx-auto flex flex-col items-center">
+      <h1
+        class="text-white absolute 2xl:text-[100px] sm:text-[64px] font-[500] md:leading-[64px] md:tracking-[2] text-center -mt-28 lg:ml-12 hero-section-heading leading-none 2xl:mt-10">
+        Crafting code connections with <span
+          class="text-[#B182FF] leading-none sm:text-[64px] font-[500] md:leading-[84px] md:tracking-[2]">#Coder
+          Club</span>
+      </h1>
+      <div
+        class="absolute lg:mt-16  sm:mt-20 sm:w-[85%] text-[#B1B0B9] text-center lg:ml-20 sm:text-[20px] hero-section-subheading font-[300] md:leading-[28px] md:tracking-[1] text-[16px] 2xl:text-[40px] 2xl:leading-[84px] 2xl:mt-44">
+        Coders Club is a coding and technology related club of L.D. College of Engineering. It aims to make the students
+        learn and expertise coding. At Coders Club, the students apply computer programming concepts in solving real
+        life problems.
+      </div>
+
+      <img src="./assets//coverImage.png" alt="coverImage" class="" />
+
+      <div class="flex justify-center items-center -mt-14 sm:-mt-28 flex-col gap-5">
+        <div
+          class="box-shadow-btn text-center rounded-full w-fit text-white px-6 py-2 gap-[10px] hover:scale-95 transition-all duration-200 text-[14px] font-[200] bg-[#09062C] 2xl:text-[50px] 2xl:px-14 2xl:py-8 2xl:-mt-44">
+          Who We Are
+        </div>
+        <p class="text-white sm:text-[48px] font-[500] 2xl:text-[100px]">Who We Are</p>
+      </div>
+
+      <div class="sm:text-[20px] text-[#B1B0B9] text-center mt-5 sm:w-[80%] font-[300] leading-[28px] tracking-[1] 2xl:text-[40px] 2xl:leading-[48px]">
+        At Coders Club, the students apply computer programming concepts in solving real life problems. Coders Club
+        focus on new technologies and computer languages and provide technical and practical knowledge to the students.
+      </div>
+    </div>
+
+
+    <!-- SkillGrid -->
+    <div class="flex flex-col text-white mx-auto w-8/12 mt-14 justify-center items-center relative skill-grid">
+      <!-- row 1 -->
+      <div class="flex">
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+        <div class="sm:w-28 sm:h-28 border-[#CA88FF] skill_grid_border 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+      </div>
+      <div class="flex items-center justify-center">
+        <div class="border-l border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 flex items-center justify-center sm:text-6xl skill_shadow 2xl:w-72 2xl:h-72 2xl:text-[110px]">
+          <i class="fab fa-angular"></i>
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 flex items-center justify-center sm:text-6xl skill_shadow 2xl:w-72 2xl:h-72 2xl:text-[110px]">
+          <img src="./assets/nextjs.svg" alt="nextjs_image" width="60" height="60" class="nextjs_image">
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 flex items-center justify-center sm:text-6xl skill_shadow 2xl:w-72 2xl:h-72 2xl:text-[110px]">
+          <i class="fab fa-react"></i>
+        </div>
+        <div class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+      </div>
+
+      <div class="flex">
+        <div class="border-l border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 flex items-center justify-center sm:text-6xl skill_shadow 2xl:w-72 2xl:h-72 2xl:text-[110px]">
+          <i class="fab fa-vuejs"></i>
+        </div>
+        <div class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+        <div class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+        <div class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+      </div>
+
+      <div class="flex">
+        <div class="border-l border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 flex items-center justify-center sm:text-6xl skill_shadow 2xl:w-72 2xl:h-72 2xl:text-[110px]">
+          <i class="fab fa-php"></i>
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 flex items-center justify-center sm:text-6xl skill_shadow 2xl:w-72 2xl:h-72 2xl:text-[110px]">
+          <i class="fab fa-python"></i>
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 flex items-center justify-center sm:text-6xl skill_shadow 2xl:w-72 2xl:h-72 2xl:text-[110px]">
+          <i class="fab fa-java"></i>
+        </div>
+        <div class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-288 border-opacity-10 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+      </div>
+      <div class="flex">
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border_btm 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+        <div class="sm:w-28 sm:h-28 border-[#CA88FF] skill_grid_border_btm 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border_btm 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border_btm 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border_btm 2xl:w-72 2xl:h-72 2xl:text-[110px]"></div>
+      </div>
+      <div class="absolute rounded-full shadow-[#CA87FF] shadow-[0px_0px_250px_250px] opacity-15 ml-20"></div>
+    </div>
+
+    <!-- Mission And Vision-->
+    <div class="flex flex-col text-[#ffffff] mx-auto sm:w-8/12 w-10/12 mt-8 sm:gap-20 items-center justify-center">
+      <div class="flex flex-col items-center justify-center gap-4 text-center">
+        <div
+          class="box-shadow-btn text-center rounded-full w-fit text-white px-6 py-2 gap-[10px] hover:scale-95 transition-all duration-200 text-[14px] font-[200] bg-[#09062C] 2xl:px-16 2xl:py-8 2xl:text-[50px]">
+          Mission and Vision
+        </div>
+        <p class="text-[48px] sm:leading-[64px] sm:tracking-[2] 2xl:text-[100px] 2xl:mt-20">We are thinking for next gen</p>
+        <p class="w-[82%] text-[#B1B0B9] sm:text-[20px] sm:leading-[21px] sm:tracking-[1] font-[300] 2xl:text-[40px] 2xl:leading-[48px] 2xl:mt-16">
+          Driving innovation through code, Pioneering a future powered by
+          technology
+        </p>
+      </div>
+
+      <div class="relative flex sm:flex-row flex-col sm:gap-x-32 inset-0 items-center justify-center">
+        <div class="sm:w-[40%] flex flex-col gap-5 2xl:gap-10 border-r border-l border-[#A079FF] p-7 psuedo_border">
+
+          <i
+            class="fa-solid fa-location-crosshairs text-4xl border border-[#6A559D] rounded-[10px] p-2 text-[#A079FF] mission_vision_icon"></i>
+
+          <p class="text-[26px] leading-[34px] tracking-[2] font-[500] 2xl:text-[52px]">Our Mission</p>
+          <div class="absolute h-2 w-2 bg-white rounded-full ml-[23px] mt-[23px] shadow-white shadow-[0_0_15px_5px]">
+          </div>
+          <p class="text-[#B1B0B9] text-[16px] leading-[22px] tracking-[1] font-[300] 2xl:text-[40px] 2xl:leading-[48px]">
+            The mission is to have integrity and achieve Excellence, respect the
+            Individual and foster an environment of learning and sharing. The focus
+            is on helping students to achieve their career objectives by providing
+            the innovative learning methods and best practical approach of learning.
+          </p>
+        </div>
+        <div class="sm:w-[40%] flex flex-col gap-5 border-r border-l border-[#A079FF] p-7 psuedo_border 2xl:gap-10">
+          <i
+            class="fa-solid fa-eye text-4xl border border-[#6A559D] rounded-[10px] p-2 ralative text-[#6A559D] mission_vision_icon"></i>
+          <div
+            class="absolute h-2 w-2 bg-white rounded-full ml-[25px] mt-[23px] shadowshadow-white shadow-[0_0_15px_5px]">
+          </div>
+          <p class="text-[26px] font-[500] leading-[34px] tracking-[2] 2xl:text-[52px]">Our Vision</p>
+          <p class="text-[#B1B0B9] text-[16px] leading-[22px] tracking-[1] font-[300] 2xl:text-[40px] 2xl:leading-[48px]">
+            The vision is to ensure that students acquire and use knowledge,
+            skills to become creative and successful members of society. The
+            club also provides internships to the students to boost up their
+            skills in coding, marketing and management.
+          </p>
+        </div>
+        <div class="absolute rounded-full shadow-[#2F2642] shadow-[0px_0px_150px_150px] opacity-40"></div>
+      </div>
+    </div>
+
+    <!-- Achievement -->
+    <div class="flex flex-col mx-auto sm:w-7/12 w-10/12 text-white items-center justify-center gap-y-5 mt-10 2xl:gap-10">
+      <div
+        class="box-shadow-btn text-center rounded-full w-fit text-white px-6 py-2 gap-[10px] hover:scale-95 transition-all duration-200 text-[14px] font-[200] bg-[#09062C] 2xl:px-16 2xl:py-8 2xl:text-[50px]">
+        Our Achievement
+      </div>
+      <p class="text-[48px] sm:leading-[64px] sm:tracking-[2] font-[500] text-center 2xl:text-[100px]">Coders Club triumphs</p>
+      <div class="text-[#B1B0B9] sm:text-[20px] font-[300] sm:tracking-[1] text-center mt-3 2xl:text-[40px] 2xl:leading-[48px]">
+        Embrace our journey of achievement, where innovation and dedication
+        converge. Through the Coders Club's persistent commitment, we've
+        redefined excellence and set new standards in the world of code.
+      </div>
+
+      <div class="flex flex-col gap-5 text-lg mt-20 justify-center font-[200] leading-[22px] tracking-[1] 2xl:text-[40px] 2xl:leading-[48px]">
+        <div class="flex gap-3 items-start">
+          <span class="tick_icon_bg p-1 text-lg rounded-full 2xl:text-2xl 2xl:p-2">
+            <i class="fa-solid fa-check"></i>
+          </span>
+          <p>
+            Smart Gujarat for New India hackathon was organised by the state
+            government.
+          </p>
+        </div>
+        <div class="flex gap-3 items-start">
+          <div class="tick_icon_bg p-1 text-lg rounded-full font-light 2xl:text-2xl 2xl:p-2">
+            <i class="fa-solid fa-check"></i>
+          </div>
+
+          <p>
+            In this hackathon, total 10 teams from the club represented the
+            college and gave an excellent performance. 6 out of these 10 teams
+            reached the final round held at PDPU Gandhinagar. One team emerged
+            out to be the second winner of the competition.
+          </p>
+        </div>
+        <div class="flex gap-3 items-start">
+          <div class="tick_icon_bg p-1 text-lg rounded-full font-light 2xl:text-2xl 2xl:p-2">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p>
+            Two out of four teams from the Innovator club won at the Girlscript
+            Hackathon.
+          </p>
+        </div>
+        <div class="flex gap-3 items-start">
+          <div class="tick_icon_bg p-1 text-lg rounded-full font-light 2xl:text-2xl 2xl:p-2">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p>
+            One team from the club won at the Dronathon and one at the Enginium
+            Hackathon. Another team also won the Startup Weekend.
+          </p>
+        </div>
+        <div class="flex gap-3 items-start">
+          <div class="tick_icon_bg p-1 text-lg rounded-full font-light 2xl:text-2xl 2xl:p-2">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p>
+            Chaxu Valand, Vaibhav Mehta, Vibhav Nirmal, and Adarsh Shah, fourth
+            semester Computer Engineering students, have created an online
+            system for LD College of Engineering. This system was about
+            grievance procedure, which is a machinery to sort out issues between
+            student and college.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="flex justify-center mt-16 flex-col overflow-hidden relative 2xl:items-center">
+      <img src="assets/coverImage.png" alt="coverImage" class="w-full inset-0 object-cover clip-half absolute" />
+      <div
+        class="relative flex lg:flex-row lg:gap-72 sm:gap-20 py-14 sm:px-36  sm:mt-44 border-t border-[#302168] border-opacity-40 footer-content ml-2 sm:ml-0 2xl:mt-[530px] justify-center">
+        <div class="flex flex-col gap-y-8">
+          <img src="./assets/CodersClubLogo.png" alt="logo" width="84" height="84"/>
+          <p class="text-[#B1B0B9] text-sm 2xl:text-3xl">
+            Coders Club is a coding and technology related club of L.D. College
+            of Engineering. It aims to make the students learn and expertise
+            coding.
+          </p>
+          <div class="flex flex-col gap-3">
+            <a href="mailto:codersclubldce@gmail.com" class="text-white  mr-4 flex gap-2 text-sm items-center 2xl:text-3xl">
+              <i class="fa-regular fa-envelope" class="text-xl"></i>
+              codersclubldce@gmail.com
+            </a>
+            <a href="tel:+91 9898660970" class="text-white flex gap-2 items-center text-sm 2xl:text-3xl">
+              <i class="fa-solid fa-phone" class="text-xl 2xl:text-3xl"></i>
+              +91 9898660970
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5">
+          <p class="text-white text-2xl 2xl:text-5xl">Sitemap</p>
+
+          <ul class="text-[#B1B0B9] flex flex-col gap-2 text-sm 2xl:text-3xl">
+            <a href="/">
+              <li class="hover:text-white hover:underline">Home</li>
+            </a>
+
+            <a href="/events">
+              <li class="hover:text-white hover:underline">Events</li>
+            </a>
+            <a href="/our-team">
+              <li class="hover:text-white hover:underline">Our Team</li>
+            </a>
+            <a href="/blog">
+              <li class="hover:text-white hover:underline">Blog</li>
+            </a>
+            <a href="/activities">
+              <li class="hover:text-white hover:underline">Activities</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-4 2xl:text-5xl">
+          <p class="text-white text-2xl">Follow us On</p>
+          <div class="flex gap-4 text-2xl text-white 2xl:text-4xl">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div class="absolute rounded-full shadow-[#2F2642] shadow-[0px_0px_250px_250px] opacity-40 mx-auto"></div>
+      </div>
+      <div
+        class="flex lg:justify-center justify-between lg:gap-[510px] text-white mx-auto w-10/12 text-sm py-10 border-t border-[#302168] border-opacity-40 2xl:text-2xl">
+        <p>
+          Designed by: <span class=" text-[#B182FF]">Kuldeep Jiyani</span> |
+          Developed by: <span class="text-[#B182FF]">LDCE Team</span>
+        </p>
+        <p>2024 © LDCE. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
 </body>
+
 </html>
