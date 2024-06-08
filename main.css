@@ -87,31 +87,90 @@ body {
 /*Our team page styling */
 /* ************************************************************************** */
 .team_member_1{
-  background-image: url('./assets/person1.png');
+  background-image: url('./assets/Our-Teams/HOD.png');
   background-repeat: no-repeat;
   background-size:cover;
+  background-position: center;
   background-position: center;
   width:280px;
   height:340px;
 }
 .team_member_2{
-  background-image: url('./assets/person2.png');
+  background-image: url('./assets/Our-Teams/Shyam\ President.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width:280px;
   height:340px;
 }
 .team_member_3{
-  background-image: url('./assets/person3.png');
+  background-image: url('./assets/Our-Teams/Priyanshu\ Vice\ President.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width:280px;
   height:340px;
 }
 .team_member_4{
-  background-image: url('./assets/person4.png');
+  background-image: url('./assets//Our-Teams/Bhavya\ Chairperson.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  width:280px;
+  height:340px;
+}
+.team_member_5{
+  background-image: url('./assets/Our-Teams/Krisha\ Secretary.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width:280px;
+  height:340px;
+}.team_member_6{
+  background-image: url('./assets/Our-Teams/Vishnu\ ViceSecretary.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width:280px;
+  height:340px;
+}
+.team_member_7{
+  background-image: url('./assets/Our-Teams/Kartik\ Asst.Secretary.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width:280px;
+  height:340px;
+}
+.team_member_8{
+  background-image: url('./assets/Our-Teams/Nirzar\ Manager.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width:280px;
+  height:340px;
+}
+.team_member_9{
+  background-image: url('./assets/Our-Teams/Shrey\ Dave\ Web\ Head.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width:280px;
+  height:340px;
+}
+.team_member_10{
+  background-image: url('./assets/Our-Teams/DhruvitImage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width:280px;
+  height:340px;
+}
+.team_member_11{
+  background-image: url('./assets/Our-Teams/Tanveer\ Treasurer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width:280px;
   height:340px;
 }
@@ -139,7 +198,9 @@ body {
   flex-wrap: wrap;
 }
 .course-item img{
-  border-radius: 24px;
+  border-radius: 20px;
+  background-position: center;
+  
 }
 
 
@@ -160,10 +221,11 @@ body {
   }
   .hero-section-heading{
     font-size:1.7rem;
-    margin-top:-8.5rem;
+    margin-top:-10.5rem;
+    line-height:normal;
   }
   .hero-section-subheading{
-    margin-top: -4.5rem;
+    margin-top: -4rem;
   }
   .box-shadow-btn{
     font-size: smaller;
@@ -192,10 +254,10 @@ body {
   }
 
   #mobile-menu {
-    position: absolute;
+    position:absolute;
     text-align: center;
     font-size: 16px;
-    top: 88px; 
+    top: 88px;
     left: 0;
     width: 100%;
     background-color: #020014; 
@@ -205,7 +267,7 @@ body {
     width: 100%;
     margin-bottom: 20px;
   }
-  .team_member_1, .team_member_2, .team_member_3, .team_member_4{
+  .team_member_1, .team_member_2, .team_member_3, .team_member_4, .team_member_5,.team_member_6,.team_member_7,.team_member_8,.team_member_9,.team_member_10,.team_member_11{
     width:100%;
     height: 360px;
   }
