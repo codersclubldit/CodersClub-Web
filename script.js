@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     hamburgerButton.addEventListener('click', () => {
       // Toggle mobile menu visibility
-      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('show');
   
       if (menuIcon.getAttribute('d') === "M4 6h16M4 12h16m-7 6h7") {
     

@@ -127,7 +127,7 @@ body {
   width:280px;
   height:340px;
 }.team_member_6{
-  background-image: url('./assets/Our-Teams/Vishnu\ ViceSecretary.jpg');
+  background-image: url('./assets/Our-Teams/Kartik\ Asst.Secretary.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -135,7 +135,7 @@ body {
   height:340px;
 }
 .team_member_7{
-  background-image: url('./assets/Our-Teams/Kartik\ Asst.Secretary.jpg');
+  background-image: url('./assets/Our-Teams/Vishnu\ ViceSecretary.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -200,7 +200,7 @@ body {
 .course-item img{
   border-radius: 20px;
   background-position: center;
-  
+  object-fit: fill;
 }
 
 
@@ -221,11 +221,11 @@ body {
   }
   .hero-section-heading{
     font-size:1.7rem;
-    margin-top:-10.5rem;
+    margin-top:-10rem;
     line-height:normal;
   }
   .hero-section-subheading{
-    margin-top: -4rem;
+    margin-top: -4.1rem;
   }
   .box-shadow-btn{
     font-size: smaller;
@@ -254,21 +254,28 @@ body {
   }
 
   #mobile-menu {
-    position:absolute;
+    position:fixed;
     text-align: center;
     font-size: 16px;
+    right: -100%;
     top: 88px;
-    left: 0;
     width: 100%;
+    height: 100%;
     background-color: #020014; 
     z-index: 40;
+  }
+  .show{
+    left: 0;
   }
   .course-item{
     width: 100%;
     margin-bottom: 20px;
   }
+  .course-item img{
+    height: 360px;
+  }
   .team_member_1, .team_member_2, .team_member_3, .team_member_4, .team_member_5,.team_member_6,.team_member_7,.team_member_8,.team_member_9,.team_member_10,.team_member_11{
     width:100%;
-    height: 360px;
+    height: 460px;
   }
 }
