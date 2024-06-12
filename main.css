@@ -219,14 +219,6 @@ body {
     padding: 25px;
     margin-top: 55px;
   }
-  .hero-section-heading{
-    font-size:1.7rem;
-    margin-top:-10rem;
-    line-height: 32px;
-  }
-  .hero-section-subheading{
-    margin-top: -4.1rem;
-  }
   .box-shadow-btn{
     font-size: smaller;
   }
@@ -285,14 +277,6 @@ body {
     grid-template-columns: repeat(3, 1fr) !important;
     grid-template-rows: repeat(4, auto) !important;
     gap: 25px !important;
-  }
-  .hero-section-heading{
-    font-size: 48px !important;
-    line-height: 25px !important;
-    margin-top: -7rem !important;
-  }
-  .hero-section-subheading{
-    margin-top: -1rem !important;
   }
 
   .footer-content{
