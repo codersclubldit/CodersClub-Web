@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/CodersClub-Web/assets/CodersClubLogo.png" />
+  <link rel="icon" href="/CodersClub-Web/assets/CodersClubLogo.png" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Coder's Club LDCE | Activities</title>
@@ -34,21 +34,21 @@
       </div>
 
       <div class="flex w-10/12 items-center justify-between">
-        <a href="#">
+        <a href="../index.html">
           <img src="../assets/CodersClubLogo.png" alt="logo" class="sm:h-[44px] sm:w-[44px] h-[50px] w-[50px]"
             loading="lazy" />
         </a>
 
-        <nav class="hidden md:block">
+        <nav class="hidden sm:block">
           <ul
-            class="md:flex lg:gap-x-6 lg:flex-row md:gap-x-[10px] bg-darkpurple bg-opacity-70 h-12 items-center rounded-full px-8 border border-white border-opacity-25 text-[14px] font-[400]">
+            class="sm:flex lg:gap-x-6 lg:flex-row sm:gap-x-[10px] bg-darkpurple bg-opacity-70 h-12 items-center rounded-full px-8 border border-white border-opacity-25 text-[14px] font-[400]">
             <li><a href="../index.html" class="text-[#C5C5CD] hover:text-white">Home</a></li>
             <li><a href="./activities.html" class="text-[#C5C5CD] hover:text-white">Activities</a></li>
             <li><a href="./our-team.html" class="text-[#C5C5CD] hover:text-white">Our Team</a></li>
           </ul>
         </nav>
 
-        <a href="#footer" class="hidden md:block">
+        <a href="#footer" class="hidden sm:block">
           <button
             class="w-fit px-6 py-3 gap-[10px] rounded-[8px] border border-solid border-1 border-[#6A559D] font-semibold opacity-100 text-white box-shadow-btn">
             Contact Us
@@ -57,7 +57,7 @@
 
         <!-- Hamburger Menu -->
 
-        <button class="md:hidden text-white" id="hamburger-button">
+        <button class="sm:hidden text-white" id="hamburger-button">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -89,9 +89,9 @@
       </div>
 
       <p
-        class="sm:text-[64px] font-[500] md:leading-[64px] md:tracking-[2] text-center hero-section-heading leading-none mt-1 sm:mt-0">
+        class="md:text-[64px] sm:text-[50px] font-[500] md:leading-[64px] md:tracking-[2] text-center hero-section-heading-act leading-none mt-1 sm:mt-0">
         Our coding adventures</p>
-      <p class="sm:text-[20px] text-[16px] leading-[28px] tracking-[1] text-[#B1B0B9] sm:w-8/12 text-center font-[300]">
+      <p class="sm:text-[20px] text-[16px] leading-[28px] tracking-[1] text-[#B1B0B9] md:w-8/12 text-center font-[300]">
         Enter the vibrant realm of the Coders Club, where creativity flourishes without limits. From coding projects to
         workshops and collaborative ventures, our activities cover a wide range of opportunities. Come aboard as we
         embark on a journey of exploration, learning, and collaboration.
@@ -100,17 +100,17 @@
         <div
           class="flex gap-x-1 bg-[#2F2642] bg-opacity-90 sm:h-12 items-center sm:rounded-full sm:p-2 p-[3px] border border-white border-opacity-25 sm:h-fit rounded-[25px] sm:w-[420px] mt-12 sm:text-[13px] text-[10px] font-[200] leading-[20px] text-center justify-between w-[330px]">
           <button
-            class="tab-link box-shadow-btn text-center rounded-full text-white px-3 py-2 gap-[10px]  md:text-[13px] text-[10px] font-[200] transition-all duration-200 bg-[#09062C] active"
+            class="tab-link box-shadow-btn text-center rounded-full text-white px-3 py-2 gap-[10px]  sm:text-[13px] text-[10px] font-[200] transition-all duration-200 bg-[#09062C] active"
             data-tab="tab1">
             Past Activities
           </button>
           <button
-            class="tab-link text-[#f3f3f3] text-center px-3 py-2 gap-[10px]  sm:w-[130px] transition-all duration-200 md:text-[13px] text-[10px]"
+            class="tab-link text-[#f3f3f3] text-center px-3 py-2 gap-[10px]  sm:w-[130px] transition-all duration-200 sm:text-[13px] text-[10px]"
             data-tab="tab2">
             Ongoing Activities
           </button>
           <button
-            class="tab-link text-[#f3f3f3] text-center  px-3 py-2 gap-[10px] md:text-[13px] text-[10px] transition-all duration-200 sm:w-[151px] "
+            class="tab-link text-[#f3f3f3] text-center  px-3 py-2 gap-[10px] sm:text-[13px] text-[10px] transition-all duration-200 sm:w-[151px] "
             data-tab="tab3">
             Upcoming Activities
         </button>
@@ -120,7 +120,7 @@
       <div id="tab1" class="tab-content active mt-12">
 
         <div class="course-item sm:p-4">
-          <img src="../assets/Activities/c-programming-1.png" class="w-full sm:w-[280px] h-[300px] mb-2 bg-[#E8C4FF]"
+          <img src="../assets/Activities/cprogramming.jpg" class="w-full sm:w-[280px] h-[300px] mb-2 bg-[#E8C4FF]"
             alt="c-programming-1" />
           <h2 class="text-[16px] font-semibold w-full sm:w-[280px]">C Language Workshop</h2>
           <p class="text-[#B1B0B9] text-sm">30 September, 2023</p>
@@ -320,11 +320,11 @@
     <div class="flex justify-center mt-16 flex-col overflow-hidden relative">
       <img src="../assets/coverImage.png" alt="coverImage" class="w-full inset-0 object-cover clip-half absolute" />
       <div
-        class="relative flex lg:flex-row sm:gap-20 py-14 sm:px-36  sm:mt-44 border-t border-[#302168] border-opacity-40 footer-content ml-2 sm:ml-0 2xl:mt-[530px] justify-between 2xl:justify-around">
+        class="relative flex lg:flex-row md:gap-20 py-14 md:px-36 sm:px-16  sm:mt-44 border-t border-[#302168] border-opacity-40 footer-content ml-2 sm:ml-0 2xl:mt-[530px] justify-between 2xl:justify-around">
         <div class="flex flex-col gap-y-8 sm:w-[30%]">
           <img src="../assets/CodersClubLogo.png" alt="logo" width="84" height="84" />
           <p class="text-[#B1B0B9] text-sm 2xl:text-3xl">
-            Our Office <br>
+            <span class="text-white text-2xl 2xl:text-5x z-30">Our Office</span> <br>
             IT Department <br>
             1013 Annexe Building <br>
             L.D. College Of Engineering <br>
@@ -343,9 +343,9 @@
           </div>
         </div>
         <div class="flex flex-col gap-5">
-          <p class="text-white text-2xl 2xl:text-5xl z-10">Sitemap</p>
+          <p class="text-white text-2xl 2xl:text-5xl z-30">Sitemap</p>
 
-          <ul class="text-[#B1B0B9] flex flex-col gap-2 text-sm 2xl:text-3xl">
+          <ul class="text-[#B1B0B9] flex flex-col gap-2 text-sm 2xl:text-3xl z-30">
             <a href="../index.html">
               <li class="hover:text-white hover:underline">Home</li>
             </a>
@@ -369,19 +369,21 @@
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
           </div>
-        </div>
+      </div>
       </div>
 
       <div class="absolute rounded-full shadow-[#2F2642] shadow-[0px_0px_250px_250px] opacity-40 md:left-[700px]"></div>
 
       <div
-        class="flex sm:flex-row flex-col lg:justify-center justify-between lg:gap-[450px] text-white mx-auto w-10/12 text-sm py-10 border-t border-[#302168] border-opacity-40 2xl:text-2xl gap-5">
+      class="flex lg:flex-row flex-col lg:justify-center lg:gap-[430px] text-white mx-auto w-10/12 text-sm py-10 border-t border-[#302168] border-opacity-40 2xl:text-2xl] gap-5 footer-btm">
+      <div class="flex sm:flex-row flex-col gap-x-2">
         <p>
-          Designed by: <span class=" text-[#B182FF]">Kuldeep Jiyani & Shrey Dave</span> |
-          Developed by: <span class="text-[#B182FF]">LDIT Team</span>
-        </p>
-        <p>2024 © LDIT. All Rights Reserved</p>
+          Designed by: <span class="text-[#B182FF]">Kuldeep Jiyani & Shrey Dave</span> |</p>
+        <p>
+          Developed by: <span class="text-[#B182FF]">LDIT Team</span></p>
       </div>
+      <p>2024 © LDIT. All Rights Reserved</p>
+    </div>
     </div>
   </footer>
   <script src="../script.js"></script>

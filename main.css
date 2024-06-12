@@ -222,7 +222,7 @@ body {
   .hero-section-heading{
     font-size:1.7rem;
     margin-top:-10rem;
-    line-height:normal;
+    line-height: 32px;
   }
   .hero-section-subheading{
     margin-top: -4.1rem;
@@ -277,5 +277,28 @@ body {
   .team_member_1, .team_member_2, .team_member_3, .team_member_4, .team_member_5,.team_member_6,.team_member_7,.team_member_8,.team_member_9,.team_member_10,.team_member_11{
     width:100%;
     height: 460px;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1080px) {
+  .member_grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-rows: repeat(4, auto) !important;
+    gap: 25px !important;
+  }
+  .hero-section-heading{
+    font-size: 48px !important;
+    line-height: 25px !important;
+    margin-top: -7rem !important;
+  }
+  .hero-section-subheading{
+    margin-top: -1rem !important;
+  }
+
+  .footer-content{
+    margin-left:-25px !important;
+  }
+  .footer-btm{
+    gap: 180px !important;
   }
 }
