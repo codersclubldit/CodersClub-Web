@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/CodersClub-Web/assets/CodersClubLogo.png"/>
+  <title>Coder's Club LDCE | Our Team</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../main.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="w-screen min-h-screen bg-[#020014] flex flex-col">
+
+  <header>
+    <!-- NavBar -->
+    <div
+      class="fixed flex h-[88px] w-full items-center sm:justify-evenly  justify-center bg-opacity-10 border-b border-[#2F2642] border-opacity-40 backdrop-blur-md bg-[#020014] z-50">
+      <div class="relative -mt-40 -z-10">
+        <div class="absolute inset-0 sm:left-72 sm:ml-56 sm:left-52 sm:ml-32">
+          <div class="rounded-full shadow-[#2F2642] shadow-[0px_0px_500px_200px] opacity-50"></div>
+        </div>
+      </div>
+
+      <div class="flex w-10/12 items-center justify-between">
+        <a href="../index.html">
+          <img src="../assets/CodersClubLogo.png" alt="logo" loading="lazy"
+            class="sm:h-[44px] sm:w-[44px] h-[50px] w-[50px]" />
+        </a>
+
+        <nav class="hidden sm:block">
+          <ul
+            class="sm:flex lg:gap-x-6 lg:flex-row sm:gap-x-[10px] bg-darkpurple bg-opacity-70 h-12 items-center rounded-full px-8 border border-white border-opacity-25 text-[14px] font-[400]">
+            <li><a href="../index.html" class="text-[#C5C5CD] hover:text-white">Home</a></li>
+            <li><a href="./activities.html" class="text-[#C5C5CD] hover:text-white">Activities</a></li>
+            <li><a href="./our-team.html" class="text-[#C5C5CD] hover:text-white">Our Team</a></li>
+
+          </ul>
+        </nav>
+
+        <a href="#footer" class="hidden sm:block">
+          <button
+            class="w-fit px-6 py-3 gap-[10px] rounded-[8px] border border-solid border-1 border-[#6A559D] font-semibold opacity-100 text-white box-shadow-btn">
+            Contact Us
+          </button>
+        </a>
+
+        <!-- Hamburger Menu -->
+
+        <button class="sm:hidden text-white" id="hamburger-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+
+
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="sm:hidden" id="mobile-menu">
+      <ul class="bg-opacity-70 p-4 border-[#2F2642] border-opacity-40">
+        <li class="py-2"><a href="../index.html" class="text-[#C5C5CD] hover:text-white">Home</a></li>
+        <li class="py-2"><a href="./activities.html" class="text-[#C5C5CD] hover:text-white">Activities</a></li>
+        <li class="py-2"><a href="./our-team.html" class="text-[#C5C5CD] hover:text-white">Our Team</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="relative flex justify-center items-center sm:mt-48 mt-28 flex-col sm:gap-5 w-10/12 mx-auto">
+      <div
+        class="box-shadow-btn text-center rounded-full w-fit text-white px-6 py-2 gap-[10px] hover:scale-95 transition-all duration-200 text-[14px] font-[200] bg-[#09062C]">
+        Our Team
+      </div>
+
+      <p class="text-[64px] leading-[84px] tracking-[2] text-white font-[500]">Our stellar squad</p>
+      <p class="text-[#B1B0B9] sm:text-[20px] text-[16px] font-[200] leading-[28px] tracking-[1] text-center lg:w-8/12">
+        Explore the core of our energetic team, where dedication and skill merge to craft outstanding solutions.
+        Discover the minds behind the code, bound by a collective dedication to innovation and quality. United, we
+        propel the future of technology forward.
+      </p>
+      <div class="w-full">
+
+        <div
+          class="relative grid lg:grid-cols-4 lg:grid-rows-3 sm:grid-cols-2 sm:grid-rows-6 grid-cols-1 grid-rows-11 gap-12 mt-20 place-items-center text-[#F3F3F5] member_grid">
+          <div class="relative team_member_1 rounded-[24px] flex flex-col p-4 justify-end">
+            <div class="absolute default_text transition-all duration-200 card-text flex flex-col gap-y-2">
+              <p class="text-xl">Dr. Hiteishi Dewanji</p>
+              <p class="text-sm">Faculty Co-ordinator</p>
+
+              <div class="flex gap-2 text-[12px]">
+                <div class="border rounded-full p-1 px-2">
+                  Head Of Department
+                </div>
+                <div class="border rounded-full p-1 px-2">IT Department</div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="relative team_member_2 card rounded-[24px] p-4 justify-end flex flex-col">
+            <div class="absolute default_text transition-all duration-200 card-text flex flex-col gap-y-2">
+              <p class="text-xl">Shyam Kakkad</p>
+              <p class="text-sm">President</p>
+
+              <div class="flex gap-2 text-[12px]">
+                <div class="border rounded-full p-1 px-2">IT Department</div>
+              </div>
+            </div>
+
+            <div
+              class="absolute hover_text transition-all duration-200 card-text flex gap-6 text-2xl items-center justify-center">
+
+              <a href="https://www.instagram.com/shyam_kakkad___14?igsh=MWoyODU1Z2VxYTgxMQ==" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a
+                href="https://www.linkedin.com/in/shyam-kakkad-182791264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app#https://www.linkedin.com/in/shyam-kakkad-182791264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="relative team_member_3 card rounded-[24px] p-4 justify-end flex flex-col">
+            <div class="absolute default_text transition-all duration-200 card-text flex flex-col gap-y-2">
+              <p class="text-xl">Priyanshu Sharma</p>
+              <p class="text-sm">Vice-President</p>
+
+              <div class="flex gap-2 text-[12px]">
+                <div class="border rounded-full p-1 px-2">EC Department</div>
+              </div>
+            </div>
+
+            <div
+              class="absolute hover_text transition-all duration-200 card-text flex gap-6 text-2xl items-center justify-center">
+
+              <a href="https://www.instagram.com/its_me_little_panda/?igsh=MWgwOHFveDByZ3UyYg%3D%3D" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a
+                href="https://www.linkedin.com/in/priyanshu-sharma-6ab694229/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="relative team_member_4 card rounded-[24px] p-4 justify-end flex flex-col">
+            <div class="absolute default_text transition-all duration-200 card-text flex flex-col gap-y-2">
+              <p class="text-xl">Bhavya Shah</p>
+              <p class="text-sm">Chairmain</p>
+
+              <div class="flex gap-2 text-[12px]">
+                <div class="border rounded-full p-1 px-2">IT Department</div>
+              </div>
+            </div>
+
+            <div
+              class="absolute hover_text transition-all duration-200 card-text flex gap-6 text-2xl items-center justify-center">
+
+              <a href="https://www.instagram.com/bhavyashah2004?igsh=MXRhOGVneGJ0cmdteg==" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a
+                href="https://www.linkedin.com/in/bhavya-shah-73bb21289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="relative team_member_5 card rounded-[24px] p-4 justify-end flex flex-col">
+            <div class="absolute default_text transition-all duration-200 card-text flex flex-col gap-y-2">
+              <p class="text-xl">Krisha Shah</p>
+              <p class="text-sm">Secretary</p>
+
+              <div class="flex gap-2 text-[12px]">
+                <div class="border rounded-full p-1 px-2">IT Department</div>
+              </div>
+            </div>
+
+            <div
+              class="absolute hover_text transition-all duration-200 card-text flex gap-6 text-2xl items-center justify-center">
+              <a href="https://www.instagram.com/__kriishaa__03/" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a
+                href="https://www.linkedin.com/in/krisha-shah-00b72a293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="relative team_member_7 card rounded-[24px] p-4 justify-end flex flex-col">
+            <div class="absolute default_text transition-all duration-200 card-text flex flex-col gap-y-2">
+              <p class="text-xl">Vishnu Madhani</p>
+              <p class="text-sm">Assistant-Secretary</p>
+
+              <div class="flex gap-2 text-[12px]">
+                <div class="border rounded-full p-1 px-2">IT Department</div>
+              </div>
+            </div>
+
+            <div
+              class="absolute hover_text transition-all duration-200 card-text flex gap-6 text-2xl items-center justify-center">
+              <a href="https://www.instagram.com/vishnu__madhani?igsh=Y3F0aTJ2emV5MXYx" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/vishnu-madhani-38a609274" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="relative team_member_6 card rounded-[24px] p-4 justify-end flex flex-col">
+            <div class="absolute default_text transition-all duration-200 card-text flex flex-col gap-y-2">
+              <p class="text-xl">Kartik Modariya</p>
+              <p class="text-sm">Vice-Secretary</p>
+
+              <div class="flex gap-2 text-[12px]">
+                <div class="border rounded-full p-1 px-2">CE Department</div>
+              </div>
+            </div>
+
+            <div
+              class="absolute hover_text transition-all duration-200 card-text flex gap-6 text-2xl items-center justify-center">
+              <a href="https://www.instagram.com/_.i_m_k_____._?igsh=bTRyM2Nqa3Z6dnh0" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/kartik-moradiya-917301279" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          
+          <div class="relative team_member_8 card rounded-[24px] p-4 justify-end flex flex-col">
+            <div class="absolute default_text transition-all duration-200 card-text flex flex-col gap-y-2">
+              <p class="text-xl">Nirzar Diwan</p>
+              <p class="text-sm">Manager</p>
+
+              <div class="flex gap-2 text-[12px]">
+                <div class="border rounded-full p-1 px-2">IT Department</div>
+              </div>
+            </div>
+
+            <div
+              class="absolute hover_text transition-all duration-200 card-text flex gap-6 text-2xl items-center justify-center">
+              <a href="https://www.instagram.com/nirzar_diwan_14?igsh=OWs4aGdjbG9iNjRn&utm_source=qr" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a
+                href="https://www.linkedin.com/in/nirzar-diwan-105869281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+
+
+            </div>
+          </div>
+          <div class="relative team_member_9 card rounded-[24px] p-4 justify-end flex flex-col">
+            <div class="absolute default_text transition-all duration-200 card-text flex flex-col gap-y-2">
+              <p class="text-xl">Shrey Dave</p>
+              <p class="text-sm">Web Head</p>
+
+              <div class="flex gap-2 text-[12px]">
+                <div class="border rounded-full p-1 px-2">IT Department</div>
+              </div>
+            </div>
+
+            <div
+              class="absolute hover_text transition-all duration-200 card-text flex gap-6 text-2xl items-center justify-center">
+              <a href="https://www.instagram.com/shreydaveee" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="relative team_member_10 card rounded-[24px] p-4 justify-end flex flex-col">
+            <div class="absolute default_text transition-all duration-200 card-text flex flex-col gap-y-2">
+              <p class="text-xl">Dhruvit Garathiya</p>
+              <p class="text-sm">Social Media Head</p>
+
+              <div class="flex gap-2 text-[12px]">
+                <div class="border rounded-full p-1 px-2">IT Department</div>
+              </div>
+            </div>
+
+            <div
+              class="absolute hover_text transition-all duration-200 card-text flex gap-6 text-2xl items-center justify-center">
+
+              <a href="https://www.instagram.com/dhruvit.158/" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a
+                href="https://www.linkedin.com/in/dhruvit-garathiya?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="relative team_member_11 card rounded-[24px] p-4 justify-end flex flex-col">
+            <div class="absolute default_text transition-all duration-200 card-text flex flex-col gap-y-2">
+              <p class="text-xl">Tanveer Chauhan</p>
+              <p class="text-sm">Treasurer</p>
+
+              <div class="flex gap-2 text-[12px]">
+                <div class="border rounded-full p-1 px-2">IT Department</div>
+              </div>
+            </div>
+
+            <div
+              class="absolute hover_text transition-all duration-200 card-text flex gap-6 text-2xl items-center justify-center">
+              <a href="https://www.instagram.com/tanveer_chauhan_2935/" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/tanveer-chauhan-80b633294/" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+          </div>
+          <div class="absolute rounded-full shadow-[#CA87FF] shadow-[0px_0px_350px_350px] -z-10 opacity-20"></div>
+        </div>
+      </div>
+      <!-- CodeBlock -->
+      <div class="absolute sm:flex gap-5 -z-10 hidden">
+        <div class="flex flex-col gap-3 text-[#FFFFFF1A] psuedo_border p-4 w-[170px] h-full opacity-50">
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+        </div>
+        <div class="flex flex-col gap-2 text-[#FFFFFF1A] psuedo_border p-4 w-[170px]  opacity-50">
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+        </div>
+        <div class="flex flex-col gap-2 text-[#FFFFFF1A] psuedo_border p-4 w-[170px]  opacity-30">
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+        </div>
+        <div class="flex flex-col gap-2 text-[#FFFFFF1A] psuedo_border p-4 w-[170px] opacity-30">
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+        </div>
+        <div class="flex flex-col gap-2 text-[#FFFFFF1A] psuedo_border p-4 w-[170px] opacity-50">
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+
+        </div>
+        <div class="flex flex-col gap-3 text-[#FFFFFF1A] psuedo_border p-4 w-[170px] opacity-50">
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="flex justify-center mt-16 flex-col overflow-hidden relative">
+      <img src="../assets/coverImage.png" alt="coverImage" class="w-full inset-0 object-cover clip-half absolute" />
+      <div
+        class="relative flex lg:flex-row md:gap-20 py-14 md:px-36 sm:px-16  sm:mt-44 border-t border-[#302168] border-opacity-40 footer-content ml-2 sm:ml-0 2xl:mt-[530px] justify-between 2xl:justify-around">
+        <div class="flex flex-col gap-y-8 sm:w-[30%]">
+          <img src="../assets/CodersClubLogo.png" alt="logo" width="84" height="84" />
+          <p class="text-[#B1B0B9] text-sm 2xl:text-3xl">
+            <span class="text-white text-2xl 2xl:text-5x z-30">Our Office</span> <br>
+            IT Department <br>
+            1013 Annexe Building <br>
+            L.D. College Of Engineering <br>
+            Ahmedabad-3800015
+          </p>
+          <div class="flex flex-col gap-3">
+            <a href="mailto:codersclubldit@gmail.com"
+              class="text-white  mr-4 flex gap-2 text-sm items-center 2xl:text-3xl">
+              <i class="fa-regular fa-envelope" class="text-xl"></i>
+              codersclubldit@gmail.com
+            </a>
+            <a href="tel:+9170968 81951" class="text-white flex gap-2 items-center text-sm 2xl:text-3xl">
+              <i class="fa-solid fa-phone" class="text-xl 2xl:text-3xl"></i>
+              +9170968 81951
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5">
+          <p class="text-white text-2xl 2xl:text-5xl z-30">Sitemap</p>
+
+          <ul class="text-[#B1B0B9] flex flex-col gap-2 text-sm 2xl:text-3xl z-30">
+            <a href="../index.html">
+              <li class="hover:text-white hover:underline">Home</li>
+            </a>
+            <a href="../pages/activities.html">
+              <li class="hover:text-white hover:underline">Activities</li>
+            </a>
+            <a href="../pages/our-team.html">
+              <li class="hover:text-white hover:underline">Our Team</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-y-4 2xl:text-5xl">
+          <p class="text-white text-2xl ">Follow us On</p>
+
+          <div class="flex gap-x-4 text-2xl text-white 2xl:text-4xl">
+            <a href="https://www.instagram.com/codersclub_ldce/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://in.linkedin.com/company/coder-s-club-ldce" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+      </div>
+      </div>
+
+      <div class="absolute rounded-full shadow-[#2F2642] shadow-[0px_0px_250px_250px] opacity-40 md:left-[700px]"></div>
+
+      <div
+      class="flex lg:flex-row flex-col lg:justify-center lg:gap-[430px] text-white mx-auto w-10/12 text-sm py-10 border-t border-[#302168] border-opacity-40 2xl:text-2xl] gap-5 footer-btm">
+      <div class="flex sm:flex-row flex-col gap-x-2">
+        <p>
+          Designed by: <span class="text-[#B182FF]">Kuldeep Jiyani & Shrey Dave</span> |</p>
+        <p>
+          Developed by: <span class="text-[#B182FF]">LDIT Team</span></p>
+      </div>
+      <p>2024 © LDIT. All Rights Reserved</p>
+    </div>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+
+</html>
