@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../assets/CodersClubLogo.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coder's Club LDCE | Activities</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../main.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./activities.js"></script>
+</head>
+
+<body class="w-screen min-h-screen bg-[#020014] flex flex-col">
+
+  <header>
+    <!-- NavBar -->
+    <div
+      class="fixed flex h-[88px] w-full items-center sm:justify-evenly justify-center z-50 bg-opacity-10 border-b border-[#2F2642] border-opacity-40 backdrop-blur-md bg-[#020014]">
+      <div class="relative -mt-40 -z-10">
+        <div class="absolute inset-0 sm:left-72 sm:ml-56 sm:left-52 sm:ml-32">
+          <div class="rounded-full shadow-[#2F2642] shadow-[0px_0px_500px_200px] opacity-50"></div>
+        </div>
+      </div>
+
+      <div class="flex w-10/12 items-center justify-between">
+        <a href="../index.html">
+          <img src="../assets/CodersClubLogo.png" alt="logo" class="sm:h-[44px] sm:w-[44px] h-[50px] w-[50px]"
+            loading="lazy" />
+        </a>
+
+        <nav class="hidden sm:block">
+          <ul
+            class="sm:flex lg:gap-x-6 lg:flex-row sm:gap-x-[10px] bg-darkpurple bg-opacity-70 h-12 items-center rounded-full px-8 border border-white border-opacity-25 text-[14px] font-[400]">
+            <li><a href="../index.html" class="text-[#C5C5CD] hover:text-white">Home</a></li>
+            <li><a href="./activities.html" class="text-[#C5C5CD] hover:text-white">Activities</a></li>
+            <li><a href="./our-team.html" class="text-[#C5C5CD] hover:text-white">Our Team</a></li>
+          </ul>
+        </nav>
+
+        <a href="#footer" class="hidden sm:block">
+          <button
+            class="w-fit px-6 py-3 gap-[10px] rounded-[8px] border border-solid border-1 border-[#6A559D] font-semibold opacity-100 text-white box-shadow-btn">
+            Contact Us
+          </button>
+        </a>
+
+        <!-- Hamburger Menu -->
+
+        <button class="sm:hidden text-white" id="hamburger-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+
+
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="sm:hidden" id="mobile-menu">
+      <ul class="bg-opacity-70 p-4 border-[#2F2642] border-opacity-40">
+        <li class="py-2"><a href="../index.html" class="text-[#C5C5CD] hover:text-white">Home</a></li>
+        <li class="py-2"><a href="./activities.html" class="text-[#C5C5CD] hover:text-white">Activities</a></li>
+        <li class="py-2"><a href="./our-team.html" class="text-[#C5C5CD] hover:text-white">Our Team</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div
+      class="relative flex justify-center items-center sm:mt-48 mt-32 flex-col gap-5 sm:w-11/12 w-10/12 mx-auto text-[#f3f3f3]">
+      <div
+        class="box-shadow-btn text-center rounded-full w-fit text-white px-6 py-2 gap-[10px] hover:scale-95 transition-all duration-200 text-[14px] font-[200] bg-[#09062C]">
+        Our Activities
+      </div>
+
+      <p
+        class="md:text-[64px] sm:text-[50px] font-[500] md:leading-[64px] md:tracking-[2] text-center hero-section-heading-act leading-none mt-1 sm:mt-0">
+        Our coding adventures</p>
+      <p class="sm:text-[20px] text-[16px] leading-[28px] tracking-[1] text-[#B1B0B9] md:w-8/12 text-center font-[300]">
+        Enter the vibrant realm of the Coders Club, where creativity flourishes without limits. From coding projects to
+        workshops and collaborative ventures, our activities cover a wide range of opportunities. Come aboard as we
+        embark on a journey of exploration, learning, and collaboration.
+      </p>
+
+        <div
+          class="flex gap-x-1 bg-[#2F2642] bg-opacity-90 sm:h-12 items-center sm:rounded-full sm:p-2 p-[3px] border border-white border-opacity-25 sm:h-fit rounded-[25px] sm:w-[420px] mt-12 sm:text-[13px] text-[10px] font-[200] leading-[20px] text-center justify-between w-[330px]">
+          <button
+            class="tab-link box-shadow-btn text-center rounded-full text-white px-3 py-2 gap-[10px]  sm:text-[13px] text-[10px] font-[200] transition-all duration-200 bg-[#09062C] active"
+            data-tab="tab1">
+            Past Activities
+          </button>
+          <button
+            class="tab-link text-[#f3f3f3] text-center px-3 py-2 gap-[10px]  sm:w-[130px] transition-all duration-200 sm:text-[13px] text-[10px]"
+            data-tab="tab2">
+            Ongoing Activities
+          </button>
+          <button
+            class="tab-link text-[#f3f3f3] text-center  px-3 py-2 gap-[10px] sm:text-[13px] text-[10px] transition-all duration-200 sm:w-[151px] "
+            data-tab="tab3">
+            Upcoming Activities
+        </button>
+      </div>
+<div class="flex items-start justify-center w-full">
+      <!-- tab1 -->
+      <div id="tab1" class="tab-content active mt-12">
+
+        <div class="course-item sm:p-4">
+          <img src="../assets/Activities/cprogramming.jpg" class="w-full sm:w-[280px] h-[300px] mb-2 bg-[#E8C4FF]"
+            alt="c-programming-1" />
+          <h2 class="text-[16px] font-semibold w-full sm:w-[280px]">C Language Workshop</h2>
+          <p class="text-[#B1B0B9] text-sm">30 September, 2023</p>
+        </div>
+
+        <div class="course-item sm:p-4">
+          <img src="../assets/Activities/MAGMantra 2.0.jpeg"
+            class="w-full sm:w-[280px] h-[300px] mb-2  bg-[#E8C4FF]" />
+          <h2 class="text-[16px] font-semibold sm:w-[280px] w-full">MAGMantra 2.0</h2>
+          <p class="text-[#B1B0B9] text-sm">2 November, 2023</p>
+        </div>
+        <div class="course-item sm:p-4">
+          <img src="../assets/Activities/E-Comm.jpg"
+            class=" w-full sm:w-[280px] h-[300px] object-cover  mb-2  bg-[#E8C4FF] object-center" />
+          <h2 class="text-[16px] font-semibold  sm:w-[280px] w-full">E-Coomerce Platform Introduction</h2>
+          <p class="text-[#B1B0B9] text-sm">10 Feb, 2024</p>
+        </div>
+        <div class="course-item sm:p-4">
+          <img src="../assets/Activities/DSA Workshop.jpg" alt="DSA workshops"
+            class="w-full sm:w-[280px] h-[300px]  mb-2  bg-[#E8C4FF]" />
+          <h2 class="text-[16px] font-semibold sm:w-[280px] w-full">DSA Workshop</h2>
+          <p class="text-[#B1B0B9] text-sm">2 May, 2024</p>
+        </div>
+      </div>
+
+      <!-- tab2 -->
+      <div id="tab2" class="tab-content mt-12">
+
+      </div>
+
+      <!-- tab3 -->
+      <div id="tab3" class="tab-content mt-12">
+
+      </div>
+
+</div>
+      <div class="absolute rounded-full shadow-[#CA87FF] shadow-[0px_0px_200px_250px] -z-10 opacity-20 mt-[300px]">
+      </div>
+
+
+      <!-- CodeBlock -->
+      <div class="absolute sm:flex gap-5 -z-10 mt-52 text-sm hidden">
+        <div class="flex flex-col gap-3 text-[#FFFFFF1A] psuedo_border p-4 w-[170px] h-full">
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+        </div>
+        <div class="flex flex-col gap-2 text-[#FFFFFF1A] psuedo_border p-4 w-[170px]">
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+        </div>
+        <div class="flex flex-col gap-2 text-[#FFFFFF1A] psuedo_border p-4 w-[170px]">
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+        </div>
+        <div class="flex flex-col gap-2 text-[#FFFFFF1A] psuedo_border p-4 w-[170px]">
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+        </div>
+        <div class="flex flex-col gap-2 text-[#FFFFFF1A] psuedo_border p-4 w-[170px]">
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+
+        </div>
+        <div class="flex flex-col gap-3 text-[#FFFFFF1A] psuedo_border p-4 w-[170px]">
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span> &lt;php ... ?&gt; </span>
+          <span>{printf}</span>
+          <span>&nbsp; &nbsp; strlen("")</span>
+          <span>echo(pi());</span>
+          <span>&nbsp; &nbsp; $cars[0]</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+          <span>&lt;p&gt; </span>
+          <span> &nbsp; &nbsp;&lt;code&gt;</span>
+          <span>&lt;html&gt;</span>
+          <span>&nbsp; &nbsp; &lt;body&gt;</span>
+          <span>&lt;head&gt;</span>
+          <span> &nbsp; &nbsp;&lt;br&gt;</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="flex justify-center mt-16 flex-col overflow-hidden relative">
+      <img src="../assets/coverImage.jpeg" alt="coverImage" class="w-full inset-0 object-cover clip-half absolute" />
+      <div
+        class="relative flex lg:flex-row lg:gap-20 py-14 lg:px-36 sm:px-16 md:px-28 sm:mt-44 border-t border-[#302168] border-opacity-40 footer-content ml-2 sm:ml-0  justify-between 2xl:justify-around">
+        <div class="flex flex-col gap-y-8 lg:w-[30%]">
+          <img src="../assets/CodersClubLogo.png" alt="logo" width="84" height="84" />
+          <p class="text-[#B1B0B9] text-sm ">
+            <span class="text-white text-2xl z-10">Our Office </span><br>
+            IT Department <br>
+            1013 Annexe Building <br>
+            L.D. College Of Engineering <br>
+            Ahmedabad-3800015
+          </p>
+          <div class="flex flex-col gap-3">
+            <a href="mailto:codersclubldit@gmail.com"
+              class="text-white  mr-4 flex gap-2 text-sm items-center ">
+              <i class="fa-regular fa-envelope" class="text-xl"></i>
+              codersclubldit@gmail.com
+            </a>
+            <a href="tel:+9170968 81951" class="text-white flex gap-2 items-center text-sm ">
+              <i class="fa-solid fa-phone" class="text-xl"></i>
+              +9170968 81951
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-5">
+          <p class="text-white text-2xl ">Sitemap</p>
+
+          <ul class="text-[#B1B0B9] flex flex-col gap-2 text-sm z-30">
+            <a href="../index.html">
+              <li class="hover:text-white hover:underline">Home</li>
+            </a>
+            <a href="../pages/activities.html">
+              <li class="hover:text-white hover:underline">Activities</li>
+            </a>
+            <a href="../pages/our-team.html">
+              <li class="hover:text-white hover:underline">Our Team</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-y-4 ">
+          <p class="text-white text-2xl ">Follow us On</p>
+
+          <div class="flex gap-x-4 text-2xl text-white">
+            <a href="https://www.instagram.com/codersclub_ldce/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://in.linkedin.com/company/coder-s-club-ldce" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute rounded-full shadow-[#2F2642] shadow-[0px_0px_250px_250px] opacity-40 md:left-[700px]"></div>
+
+      <div
+        class="flex lg:flex-row flex-col lg:justify-center lg:gap-[430px] text-white mx-auto w-10/12 text-sm py-10 border-t border-[#302168] border-opacity-40 2xl:text-2xl] gap-5 footer-btm md:ml-28">
+        <div class="flex sm:flex-row flex-col gap-x-2">
+          <p>
+            Designed by: <span class="text-[#B182FF]">Kuldeep Jiyani & Shrey Dave</span> |</p>
+          <p>
+            Developed by: <span class="text-[#B182FF]">LDIT Team</span></p>
+        </div>
+        <p>2024 © LDIT. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+
+</body>
+
+</html>

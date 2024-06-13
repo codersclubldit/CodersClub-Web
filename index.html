@@ -1,13 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodersClub Web</title>
+  <meta charset="UTF-8">
+
+  <link rel="icon" href="./assets/CodersClubLogo.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coder's Club LDCE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
-<body>
-    <h1>Coders Club Website Coming Soon!!</h1>
-    <p>Deployed on Staging Surver</p>
+
+<body class="w-full min-h-screen bg-[#020014] flex flex-col">
+  <header>
+    <!-- NavBar -->
+    <div
+      class="fixed flex h-[88px] w-full items-center sm:justify-evenly justify-center z-50 bg-opacity-10 border-b border-[#2F2642] border-opacity-40 backdrop-blur-md bg-[#020014]">
+      <div class="relative -mt-40 -z-10">
+        <div class="absolute inset-0 sm:left-72 sm:ml-56 sm:left-52 sm:ml-32">
+          <div class="rounded-full shadow-[#2F2642] shadow-[0px_0px_500px_200px] opacity-50"></div>
+        </div>
+      </div>
+
+      <div class="flex w-10/12 items-center justify-between">
+        <a href="#">
+          <img src="./assets/CodersClubLogo.png" alt="logo" loading="lazy"
+            class="sm:h-[44px] sm:w-[44px] h-[50px] w-[50px]" />
+        </a>
+
+        <nav class="hidden sm:block">
+          <ul
+            class="sm:flex lg:gap-x-6 lg:flex-row sm:gap-x-[10px] bg-darkpurple bg-opacity-70 h-12 items-center rounded-full px-8 border border-white border-opacity-25 text-[14px] font-[400]">
+            <li><a href="#" class="text-[#C5C5CD] hover:text-white">Home</a></li>
+            <li><a href="./pages/activities.html" class="text-[#C5C5CD] hover:text-white">Activities</a></li>
+            <li><a href="./pages/our-team.html" class="text-[#C5C5CD] hover:text-white">Our Team</a></li>
+          </ul>
+        </nav>
+
+        <a href="#footer" class="hidden sm:block">
+          <button
+            class="w-fit px-6 py-3 gap-[10px] rounded-[8px] border border-solid border-1 border-[#6A559D] font-semibold opacity-100 text-white box-shadow-btn">
+            Contact Us
+          </button>
+        </a>
+
+        <!-- Hamburger Menu -->
+        <button class="sm:hidden text-white" id="hamburger-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+
+
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="sm:hidden" id="mobile-menu">
+      <ul class="bg-opacity-70 p-4 border-b border-[#2F2642] border-opacity-40 min-h-screen sticky">
+        <li class="py-2"><a href="./index.html" class="text-[#C5C5CD] hover:text-white">Home</a></li>
+        <li class="py-2"><a href="./pages/activities.html" class="text-[#C5C5CD] hover:text-white">Activities</a></li>
+        <li class="py-2"><a href="./pages/our-team.html" class="text-[#C5C5CD] hover:text-white">Our Team</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HeroSection -->
+    <div class="relative sm:-mt-16 lg:w-8/12 w-10/12 mx-auto flex flex-col items-center">
+      <img src="./assets//coverImage.jpeg" alt="coverImage" class="object-cover" />
+
+      <div class="flex justify-center items-center -mt-14 sm:-mt-28 flex-col gap-5">
+        <div
+          class="box-shadow-btn text-center rounded-full w-fit text-white px-6 py-2 gap-[10px] hover:scale-95 transition-all duration-200 text-[14px] font-[200] bg-[#09062C]">
+          Who We Are
+        </div>
+        <p class="text-white sm:text-[48px] font-[500]">Who We Are</p>
+      </div>
+
+      <div
+        class="sm:text-[20px] text-[#B1B0B9] text-center mt-5 md:w-[80%] font-[300] leading-[28px] tracking-[1]">
+        Coder's Club is where ideas flourish, skills are honed, and lasting bonds are forged among like-minded
+        individuals and we empower the students to reach new heights in the realm of programming.
+      </div>
+    </div>
+
+
+    <!-- SkillGrid -->
+    <div class="flex flex-col text-white mx-auto w-8/12 mt-14 justify-center items-center relative skill-grid">
+      <!-- row 1 -->
+      <div class="flex">
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border"></div>
+        <div class="sm:w-28 sm:h-28 border-[#CA88FF] skill_grid_border"></div>
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border"></div>
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border"></div>
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border"></div>
+      </div>
+      <div class="flex items-center justify-center">
+        <div
+          class="border-l border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10">
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 flex items-center justify-center sm:text-6xl skill_shadow">
+          <i class="fab fa-angular"></i>
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 flex items-center justify-center sm:text-6xl skill_shadow">
+          <img src="./assets/nextjs.svg" alt="nextjs_image" width="60" height="60" class="nextjs_image">
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 flex items-center justify-center sm:text-6xl skill_shadow">
+          <i class="fab fa-react"></i>
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10">
+        </div>
+      </div>
+
+      <div class="flex">
+        <div
+          class="border-l border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10">
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 flex items-center justify-center sm:text-6xl skill_shadow">
+          <i class="fab fa-vuejs"></i>
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10">
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10">
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10">
+        </div>
+      </div>
+
+      <div class="flex">
+        <div
+          class="border-l border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10">
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 flex items-center justify-center sm:text-6xl skill_shadow">
+          <i class="fab fa-php"></i>
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 flex items-center justify-center sm:text-6xl skill_shadow">
+          <i class="fab fa-python"></i>
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-28 border-opacity-10 flex items-center justify-center sm:text-6xl skill_shadow">
+          <i class="fab fa-java"></i>
+        </div>
+        <div
+          class="border-r border-b border-[#CA87FF] sm:w-28 sm:h-288 border-opacity-10">
+        </div>
+      </div>
+      <div class="flex">
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border_btm"></div>
+        <div class="sm:w-28 sm:h-28 border-[#CA88FF] skill_grid_border_btm"></div>
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border_btm"></div>
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border_btm"></div>
+        <div class="border-[#CA87FF] sm:w-28 sm:h-28 skill_grid_border_btm"></div>
+      </div>
+      <div class="absolute rounded-full shadow-[#CA87FF] shadow-[0px_0px_250px_250px] opacity-15 ml-20"></div>
+    </div>
+
+    <!-- Mission And Vision-->
+    <div class="flex flex-col text-[#ffffff] mx-auto lg:w-8/12 w-10/12 mt-8 sm:gap-20 items-center justify-center">
+      <div class="flex flex-col items-center justify-center gap-4 text-center">
+        <div
+          class="box-shadow-btn text-center rounded-full w-fit text-white px-6 py-2 gap-[10px] hover:scale-95 transition-all duration-200 text-[14px] font-[200] bg-[#09062C]">
+          Mission and Vision
+        </div>
+        <p class="text-[40px] md:text-[48px] md:leading-[64px] md:tracking-[2] ">We are thinking for next gen
+        </p>
+        <p
+          class="md:w-[82%] text-[#B1B0B9] sm:text-[20px] sm:leading-[21px] sm:tracking-[1] font-[300]">
+          Our club fosters an inclusive environment where students can explore, experiment, and push the boundaries of
+          their coding abilities, cultivating a generation of skilled programmers.
+        </p>
+      </div>
+
+      <div class="relative flex sm:flex-row flex-col md:gap-x-32 inset-0 justify-center sm:gap-x-10">
+        <div class="lg:w-[40%] flex flex-col gap-5 border-r border-l border-[#A079FF] p-7 psuedo_border">
+
+          <i
+            class="fa-solid fa-location-crosshairs text-4xl border border-[#6A559D] rounded-[10px] p-2 text-[#A079FF] mission_vision_icon"></i>
+
+          <p class="text-[26px] leading-[34px] tracking-[2] font-[500] z-30">Our Mission</p>
+          <div class="absolute h-2 w-2 bg-white rounded-full ml-[23px] mt-[23px] shadow-white shadow-[0_0_15px_5px]">
+          </div>
+          <p
+            class="text-[#B1B0B9] text-[16px] leading-[22px] tracking-[1] font-[300] z-30">
+            Our mission is to ignite a passion for coding in new students through engaging workshops, events, and
+            hands-on projects. We aim to build essential coding skills, foster collaboration and creativity, and connect
+            students with industry professionals for career guidance. Ultimately, we seek to inspire and empower the
+            next generation of skilled coders.
+          </p>
+        </div>
+        <div class="lg:w-[40%] flex flex-col gap-5 border-r border-l border-[#A079FF] p-7 psuedo_border">
+          <i
+            class="fa-solid fa-eye text-4xl border border-[#6A559D] rounded-[10px] p-2 ralative text-[#6A559D] mission_vision_icon"></i>
+          <div
+            class="absolute h-2 w-2 bg-white rounded-full ml-[25px] mt-[23px] shadowshadow-white shadow-[0_0_15px_5px]">
+          </div>
+          <p class="text-[26px] font-[500] leading-[34px] tracking-[2]  z-30">Our Vision</p>
+          <p
+            class="text-[#B1B0B9] text-[16px] leading-[22px] tracking-[1] font-[300] z-30">
+            Our vision is to create a dynamic and inclusive community where every student at LDCE is empowered with the
+            skills, confidence, and inspiration to excel in the world of coding and technology. We aspire to be the
+            leading platform for nurturing talent and fostering innovation, preparing students to be future leaders in
+            the tech industry.
+          </p>
+        </div>
+        <div class="absolute rounded-full shadow-[#2F2642] shadow-[0px_0px_150px_150px] opacity-40 mt-56"></div>
+      </div>
+    </div>
+
+    <!-- Achievement -->
+    <div
+      class="flex flex-col mx-auto lg:w-7/12 w-10/12 text-white items-center justify-center gap-y-5 mt-10 ">
+      <div
+        class="box-shadow-btn text-center rounded-full w-fit text-white px-6 py-2 gap-[10px] hover:scale-95 transition-all duration-200 text-[14px] font-[200] bg-[#09062C]">
+        Our Achievement
+      </div>
+      <p class="text-[48px] sm:leading-[64px] sm:tracking-[2] font-[500] text-center">Coders Club
+        triumphs</p>
+      <div
+        class="text-[#B1B0B9] sm:text-[20px] font-[300] sm:tracking-[1] text-center mt-3">
+        Discover the synergy of innovation and dedication on our journey to excellence. The Coders Club's steadfast
+        commitment has redefined what it means to achieve greatness in the world of programming.
+      </div>
+
+      <div
+        class="flex flex-col gap-5 text-lg mt-16 justify-center font-[200] leading-[22px] tracking-[1]"">
+
+        <div class="flex gap-3 items-start">
+          <span class="tick_icon_bg p-[5px] text-lg rounded-full  leading-[0px]">
+            <i class="fa-solid fa-check"></i>
+          </span>
+          <p>
+            Successfully completed our initial courses in C Language, Web Development, and Python, receiving excellent
+            feedback and strong engagement from participants.
+          </p>
+        </div>
+        <div class="flex gap-3 items-start">
+          <div class="tick_icon_bg p-[5px] text-lg rounded-full font-light leading-[0px]">
+            <i class="fa-solid fa-check"></i>
+          </div>
+
+          <p>
+            Two of our Projects "Health City" and "Food Drive" were selected for Covid-19 Challenge.
+          </p>
+        </div>
+        <div class="flex gap-3 items-start">
+          <div class="tick_icon_bg p-[5px] text-lg rounded-full font-light leading-[0px]">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p>
+            The MAGMantra 1.0 was a resounding success, attracting enthusiastic participation from students both within
+            our college and from other institutions, who showed great response and engagement.
+          </p>
+        </div>
+        <div class="flex gap-3 items-start ">
+          <div class="tick_icon_bg p-[5px] text-lg rounded-full font-light leading-[0px]">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p>
+            We successfully completed projects like Arogya E-Care for Medical Digitization, Food Drive for NSS Pandemic
+            Relief, and Bakula for Online Grocery Shopping.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="flex justify-center mt-16 flex-col overflow-hidden relative">
+      <img src="assets/coverImage.jpeg" alt="coverImage" class="w-full inset-0 object-cover clip-half absolute" />
+      <div
+        class="relative flex lg:flex-row lg:gap-20 py-14 lg:px-36 sm:px-16 md:px-28 sm:mt-44 border-t border-[#302168] border-opacity-40 footer-content ml-2 sm:ml-0  justify-between 2xl:justify-around">
+        <div class="flex flex-col gap-y-8 lg:w-[30%]">
+          <img src="./assets/CodersClubLogo.png" alt="logo" width="84" height="84" />
+          <p class="text-[#B1B0B9] text-sm ">
+            <span class="text-white text-2xl z-10">Our Office </span><br>
+            IT Department <br>
+            1013 Annexe Building <br>
+            L.D. College Of Engineering <br>
+            Ahmedabad-3800015
+          </p>
+          <div class="flex flex-col gap-3">
+            <a href="mailto:codersclubldit@gmail.com"
+              class="text-white  mr-4 flex gap-2 text-sm items-center ">
+              <i class="fa-regular fa-envelope" class="text-xl"></i>
+              codersclubldit@gmail.com
+            </a>
+            <a href="tel:+9170968 81951" class="text-white flex gap-2 items-center text-sm ">
+              <i class="fa-solid fa-phone" class="text-xl"></i>
+              +9170968 81951
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-5">
+          <p class="text-white text-2xl ">Sitemap</p>
+
+          <ul class="text-[#B1B0B9] flex flex-col gap-2 text-sm z-30">
+            <a href="./index.html">
+              <li class="hover:text-white hover:underline">Home</li>
+            </a>
+            <a href="./pages/activities.html">
+              <li class="hover:text-white hover:underline">Activities</li>
+            </a>
+            <a href="./pages/our-team.html">
+              <li class="hover:text-white hover:underline">Our Team</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-y-4 ">
+          <p class="text-white text-2xl ">Follow us On</p>
+
+          <div class="flex gap-x-4 text-2xl text-white">
+            <a href="https://www.instagram.com/codersclub_ldce/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://in.linkedin.com/company/coder-s-club-ldce" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute rounded-full shadow-[#2F2642] shadow-[0px_0px_250px_250px] opacity-40 md:left-[700px]"></div>
+
+      <div
+        class="flex lg:flex-row flex-col lg:justify-center lg:gap-[430px] text-white mx-auto w-10/12 text-sm py-10 border-t border-[#302168] border-opacity-40 2xl:text-2xl] gap-5 footer-btm md:ml-28">
+        <div class="flex sm:flex-row flex-col gap-x-2">
+          <p>
+            Designed by: <span class="text-[#B182FF]">Kuldeep Jiyani & Shrey Dave</span> |</p>
+          <p>
+            Developed by: <span class="text-[#B182FF]">LDIT Team</span></p>
+        </div>
+        <p>2024 © LDIT. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
 </body>
+
 </html>
