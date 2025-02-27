@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAGMantra3.0 - Event Details</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0D0D2B;
+      color: #EAEAEA;
+    }
+
+    .hero-section {
+      background: url('https://via.placeholder.com/1200x500') center center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero-section h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-section p {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    .event-card {
+      background: #1A1A2E;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s;
+    }
+
+    .event-card:hover {
+      transform: scale(1.05);
+    }
+
+    .event-card img {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .event-card .card-title {
+      color: #E8C4FF;
+      font-weight: 600;
+    }
+
+    .event-card .card-text {
+      color: #D3D3D3;
+    }
+
+    .btn-primary {
+      background-color: #6A4FB3;
+      border: none;
+      transition: background 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #8A6FC1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1>MAGMantra3.0</h1>
+    <p>Mock Placement Conference - 2 March, 2025</p>
+    <a href="#details" class="btn btn-primary btn-lg">Explore Event</a>
+  </section>
+
+  <!-- Event Details Section -->
+  <section id="details" class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="event-card card">
+          <img src="../assets/Activities/image.png" class="card-img-top" alt="Event Image" height="500px" width="500px">
+          <div class="card-body">
+            <h2 class="card-title">About MAGMantra3.0</h2>
+            <p class="card-text">
+              MAGMantra3.0 was an immersive mock placement conference featuring Mock Interviews, Aptitude tests, and Group Discussions. It aimed at preparing students for the placement process, boosting confidence, and enhancing communication skills.
+            </p>
+            <h3 class="mt-4">Event Highlights</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent text-light">Mock Interviews with Industry Experts</li>
+              <li class="list-group-item bg-transparent text-light">Aptitude Tests to Sharpen Problem-Solving Skills</li>
+              <li class="list-group-item bg-transparent text-light">Group Discussions to Enhance Communication</li>
+              <li class="list-group-item bg-transparent text-light">Interactive Q&A Sessions</li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-4">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <p class="text-muted">© 2023 MAGMantra3.0. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
