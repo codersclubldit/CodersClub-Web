@@ -2,46 +2,32 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".tab-link");
   const contents = document.querySelectorAll(".tab-content");
 
-  // Add 'active' class to the first tab button and apply styling classes
-  tabs[0].classList.add(
-    "active",
-    "text-white",
-    "box-shadow-btn",
-    "rounded-full",
-    "sm:text-[12x]",
-    "font-[200]",
-    "bg-[#09062C]",
-  );
+  // Function to reset all tabs and contents
+  const resetTabs = () => {
+    tabs.forEach(tab => {
+      tab.classList.remove("active", "text-white", "box-shadow-btn", "rounded-full", "sm:text-[12px]", "font-[200]", "bg-[#09062C]");
+      tab.classList.add("text-[#f3f3f3]");
+    });
+    contents.forEach(content => content.classList.remove("active"));
+  };
 
-  tabs.forEach((tab) => {
+  // Set the default active tab dynamically (e.g., index 0 for the first tab)
+  const setActiveTab = (index) => {
+    resetTabs(); // Reset all tabs and contents first
+    tabs[index].classList.add("active", "text-white", "box-shadow-btn", "rounded-full", "sm:text-[12px]", "font-[200]", "bg-[#09062C]");
+    const targetContent = document.getElementById(tabs[index].getAttribute("data-tab"));
+    if (targetContent) {
+      targetContent.classList.add("active");
+    }
+  };
+
+  // Set the default active tab (for example, tab 0)
+  setActiveTab(1);
+
+  // Tab switching functionality
+  tabs.forEach((tab, index) => {
     tab.addEventListener("click", () => {
-      const target = tab.getAttribute("data-tab");
-
-      tabs.forEach((t) => {
-        t.classList.remove(
-          "text-white",
-          "box-shadow-btn",
-          "rounded-full",
-          "border-opacity-25",
-          "sm:text-[12px]",
-          "font-[200]",
-          "bg-[#09062C]",
-        );
-        t.classList.add("text-[#f3f3f3]");
-      });
-      tab.classList.add(
-        "text-white",
-        "box-shadow-btn",
-        "rounded-full",
-        "sm:text-[12px]",
-        "font-[200]",
-        "bg-[#09062C]",
-      );
-
-      contents.forEach((content) => {
-        content.classList.remove("active");
-      });
-      document.getElementById(target).classList.add("active");
+      setActiveTab(index); // Switch to the clicked tab
     });
   });
 });
