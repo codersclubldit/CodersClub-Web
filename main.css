@@ -174,14 +174,14 @@ body {
   width:280px;
   height:340px;
 }
-/* .team_member_12{
+.team_member_12{
   background-image: url('./assets/Our-Teams/vidishamaam.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width:280px;
   height:340px;
-} */
+}
 .card-text.hover_text {
   opacity: 0;
 }
