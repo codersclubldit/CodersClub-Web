@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // Set the default active tab (for example, tab 0)
-  setActiveTab(1);
+  setActiveTab(0);
 
   // Tab switching functionality
   tabs.forEach((tab, index) => {
